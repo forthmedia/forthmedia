@@ -12,7 +12,7 @@ gulp.task('default', ['watch']);
 
 gulp.task('watch', ['browserSync', 'sass'], function() {
     gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('src/*.html', browserSync.reload);
+    gulp.watch('src/*.html').on("change", browserSync.reload);
 });
 
 gulp.task('browserSync', function() {

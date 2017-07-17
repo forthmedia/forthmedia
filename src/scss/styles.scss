@@ -3,12 +3,23 @@
 }
 body {
     margin: 0;
+    background-color: black;
 }
-figure {
-    margin: 0;
+.main {
+    margin-top: 44px;
+    padding: 8px 0;
+    p {
+        margin: 0;
+    }
 }
-img {
-    width: 100%;
+.content {
+    background-color: white;
+}
+footer > img {
+    vertical-align: text-bottom;
+}
+footer > span {
+    display: inline-block;
 }
 footer > section {
     margin-top: 16px;
@@ -24,7 +35,7 @@ footer > section {
     display: none;
 }
 .container {
-    padding: 48px 16px;
+    padding: 24px 16px;
 }
 .item {
     padding-left: 16px;

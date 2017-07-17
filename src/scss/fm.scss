@@ -12,6 +12,15 @@ h1, h2, h3, h4, h5, h6, button, nav a {
 body {
     font-family: 'Raleway', sans-serif;    
 }
+.fm-logo {
+    padding-top: 4px;
+}
+.flagme-icon {
+    display: block;
+    height: auto;
+    margin: auto;
+    max-width: 250px;
+}
 .fm-text-dark-grey {
     color: $fm-dark-grey;
 }
@@ -103,7 +112,7 @@ body {
     float: none;
 }
 .fm-menu > a, .fm-menu-dropdown > a {
-    padding: 8px 16px;
+    padding:4px 8px;
     text-decoration: none;
     cursor: pointer;
     cursor: hand;
