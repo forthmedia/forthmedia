@@ -14,6 +14,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7533819ef2.js"></script>
 
     <!--build:js js/scripts.min.js --> 
     <script src="./js/scripts.js"></script>
@@ -23,12 +24,13 @@
     
 <div class="fm-nav">
     <!-- for desktop -->
-    <nav class="fm-blue fm-menu shadow align-left">
-        <!--a href="javascript:void(0)" id="menu_switch" class="fm-black-hover float-right hide-desktop"><i class="fa fa-bars" aria-hidden="true"></i></a-->
-        <span class="float-left"><img src="images/forthmedia-logo-transparent.png" class="fm-logo" alt="Forthmedia" width="185" height="40"></span>
+    <nav class="fm-blue fm-menu shadow align-left large">
+        <a href="javascript:void(0)" id="menu_switch" class="fm-black-hover float-right hide-desktop"><i class="fa fa-bars" aria-hidden="true"></i></a>
+        <span class="float-left"><img src="images/forthmedia-logo-transparent.png" class="fm-logo" alt="Forthmedia"></span>
     </nav>
     <!-- for mobile -->
     <nav id="menu_mobile" class="fm-menu-dropdown show-mobile large hidden">
+        <a href="javascript:;" id="app_mobile" class="fm-white-hover show-mobile hide-desktop"><i class="fa fa-mobile pad-fa"></i> Get it on Google Play</a>
     </nav>
 </div>
 
@@ -74,10 +76,6 @@
     var menu = new Menu();
     document.getElementById('menu_switch').onclick = function() {
         menu.ShowMenuHandler();
-    }
-    document.getElementById('home_menu').onclick = function() {
-        menu.HideMobile();
-        menu.Show('home');
     }
 </script>
 </body>

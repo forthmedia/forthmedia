@@ -6,7 +6,9 @@ body {
   font-family: 'Raleway', sans-serif; }
 
 .fm-logo {
-  padding-top: 4px; }
+  height: 40px;
+  padding-top: 4px;
+  width: 185px; }
 
 .flagme-icon {
   display: block;
