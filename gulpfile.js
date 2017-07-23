@@ -38,6 +38,11 @@ gulp.task('grid', function() {
         .pipe(gulp.dest('src/grid/css'));
 });
 
+gulp.task('images', function() {
+    return gulp.src('src/images/**/*')
+        .pipe(gulp.dest('dist/images'))
+})
+
 ////////// COMBINE & MINIFY
 gulp.task('minify', function() {
     return gulp.src('src/*.html')
@@ -56,7 +61,7 @@ gulp.task('clean', function() {
 
 ////////// BUILD DISTRIBUTION FOLDER
 gulp.task('build', function (callback) {
-  runSequence('clean', ['sass', 'minify'],
+  runSequence('clean', ['sass', 'minify', 'images'],
     callback
   )
 })
